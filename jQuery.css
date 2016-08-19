@@ -1,0 +1,37 @@
+header {
+  border: 5px solid;
+  padding: 5px;
+  margin: 5px;
+}
+section {
+  border: 5px solid #0066CC;
+  padding: 5px;
+  margin: 5px;
+}
+
+#sanic {
+  position: fixed;
+  left: 400px;
+  top: 130px;
+}
+
+#sanicbox {
+   height:200;
+   width:300;
+   background: #0066cc;
+}
+
+#reset{
+	height:100;
+	width:300;
+	background:  #C3C3C3;
+}
+
+#bigtext{
+	position: fixed;
+	top:225px;
+	left:400px;
+	width: 300px;
+	height: 75px;
+	text-align: center;
+}

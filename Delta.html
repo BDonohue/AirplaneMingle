@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<head>
+	<title>DELTA Flights</title>
+	<link rel="stylesheet" href="jQuery.css" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+	
+<script>
+	var type = 0;
+	var age = 0;
+	var bladder = 0;
+	var group = 0;
+	var name = "Brandon";
+	$(document).ready(function(){
+		$("#bigtext").hide();
+		$("#section1").hide();
+		$("#section2").hide();
+		$("#section3").hide();
+		$("#section4").hide();
+		$("#section5").hide();
+		$("#section6").hide();
+		$("#section7").hide();
+		$("#section8").hide();
+		$("#section9").hide();
+		$("#section10").hide();
+		$("#section11").hide();
+		$("#section12").hide();
+		$("#section13").hide();
+		$("#section14").hide();
+		$("#section15").hide();
+		$("#sanicbox").click(function(){
+			$("#sanic").animate({left: '+=2000px'}, 2000);
+			$("#bigtext").show();
+		});
+		$("#section0").click(function(){
+			$("#section0").hide();
+			$("#section15").show();
+		});
+		$("#section15a").click(function(){
+			name = $("#name").val();
+			$("#section15").hide();
+			$("#section1").show();
+		});
+		$("#section1a").click(function(){
+			$("#section1").hide();
+			$("#section2").show();
+			type = 1;
+			window.alert("Type: " + type + " Age: " + age + " Bladder: " + bladder + " Group: " + group + " Name: " + name); 
+		});
+		$("#section1b").click(function(){
+			$("#section1").hide();
+			$("#section3").show();
+			type = 2;
+			window.alert("Type: " + type + " Age: " + age + " Bladder: " + bladder + " Group: " + group + " Name: " + name); 
+		});
+		$("#section1c").click(function(){
+			$("#section1").hide();
+			$("#section4").show();
+		});
+		$("#section4a").click(function(){
+			$("#section4").hide();
+			$("#section5").show();
+		});
+		$("#section4b").click(function(){
+			$("#section4").hide();
+			$("#section6").show();
+			group = 1;
+		});
+		$("#section5a").click(function(){
+			group = $("#group").val();
+			$("#section5").hide();
+			$("#section7").show();
+		});
+		$("#section7a").click(function(){
+			$("#section7").hide();
+			$("#section8").show();
+			type = 3;
+			window.alert("Type: " + type + " Age: " + age + " Bladder: " + bladder + " Group: " + group + " Name: " + name); 
+		});
+		$("#section7b").click(function(){
+			$("#section7").hide();
+			$("#section9").show();
+			type = 4;
+			window.alert("Type: " + type + " Age: " + age + " Bladder: " + bladder + " Group: " + group + " Name: " + name); 
+		});
+		$("#section6a").click(function(){
+			$("#section6").hide();
+			$("#section10").show();
+			bladder = $("#bathroom").text();
+		});
+		$("#section10a").click(function(){
+			$("#section10").hide();
+			$("#section11").show();
+			type = 5;
+			window.alert("Type: " + type + " Age: " + age + " Bladder: " + bladder + " Group: " + group + " Name: " + name); 
+		});
+		$("#section10b").click(function(){
+			$("#section10").hide();
+			$("#section12").show();
+			type = 6;
+			window.alert("Type: " + type + " Age: " + age + " Bladder: " + bladder + " Group: " + group + " Name: " + name); 
+		});
+		$("#section10c").click(function(){
+			$("#section10").hide();
+			$("#section13").show();
+		});
+		$("#section13a").click(function(){
+			age = $("#age").val();
+			$("#section13").hide();
+			$("#section14").show();
+			type = 7;
+			window.alert("Type: " + type + " Age: " + age + " Bladder: " + bladder + " Group: " + group + " Name: " + name); 
+		});
+	});
+</script>
+
+</head>
+<body>
+
+<header><h1>
+	Welcome to Delta Airlines!
+</h1></header>
+
+<audio src="Welcome.mp3" autoplay ></audio>
+
+<section>
+	<h3>Please enter your flight number:</h3><br>
+	<input type="text"><br>
+	<button id="section0">Enter</button>
+</section>
+
+<button id="sanicbox"><h2>Who ya gunna fly?</h2></button>
+
+<div id="sanic">
+	<img width="87" height="87" src="airplane.gif">
+</div>
+
+<div id="bigtext" ><h1>FLY DELTA</h1></div>
+
+<section id="section15">
+<h1>What is your full legal name?</h1><br>
+<input type="text" id="name"> </input>
+<button id="section15a">Submit</button>
+</section>
+
+
+<section id="section1">
+<h1>Which section are you sitting in?</h1><br>
+<button id="section1a">First Class</button>
+<button id="section1b">Business</button>
+<button id="section1c">Economy</button>
+</section>
+
+<section id="section2">
+<h1>Thank you for Choosing Delta Airlines!</h1>
+<h3>First Class</h3>
+</section>
+
+<section id="section3">
+<h1>Thank you for Choosing Delta Airlines!</h1>
+<h3>Business</h3>
+</section>
+
+<section id="section4">
+<h1>Are you travelling with a group?</h1>
+<button id="section4a">Yes</button>
+<button id="section4b">No</button>
+</section>
+
+<section id="section5">
+<h1>How many people are in your group?</h1>
+<input type="number" id="group">
+<input type="submit" id="section5a">
+</section>
+
+<section id="section6">
+<h1>On a scale from 1 to 5, how often do you use the bathroom?</h1>
+<h3>1 standing for not going a lot, 5 standing for Niagara Falls</h3>
+<input type="number" id="bathroom">
+<input type="submit" id="section6a">
+</section>
+
+<section id="section7">
+<h1>Are there kids under the age of 13 in your group?</h1>
+<button id="section7a">Yes</button>
+<button id="section7b">No</button>
+</section>
+
+<section id="section8">
+<h1>Thank you for Choosing Delta Airlines!</h1>
+<h3>Group, Kids</h3>
+</section>
+
+<section id="section9">
+<h1>Thank you for Choosing Delta Airlines!</h1>
+<h3>Group, No Kids</h3>
+</section>
+
+<section id="section10">
+<h1>What do you plan on doing?</h1>
+<button id="section10a">Sleeping</button>
+<button id="section10b">Quiet Activity</button>
+<button id="section10c">Socializing</button>
+</section>
+
+<section id="section11">
+<h1>Thank you for Choosing Delta Airlines!</h1>
+<h3>Sleeping</h3>
+</section>
+
+<section id="section12">
+<h1>Thank you for Choosing Delta Airlines!</h1>
+<h3>Quiet Activity</h3>
+</section>
+
+<section id="section13">
+<h1>How old are you?</h1>
+<input type="number" id="age">
+<input type="submit" id="section13a">
+</section>
+
+<section id="section14">
+<h1>Thank you for Choosing Delta Airlines!</h1>
+<h3>Socializing</h3>
+</section>
+
+
+</body>
+</html>
